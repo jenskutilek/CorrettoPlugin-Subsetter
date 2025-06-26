@@ -1,0 +1,77 @@
+---
+type: object
+additionalProperties: false
+properties:
+  charsets:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          type: string
+        unicodes:
+          type: array
+          items:
+            type: string
+      required:
+        - id
+  ranges:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          type: string
+        axes:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              def:
+                type:
+                  - "null"
+                  - number
+              max:
+                type:
+                  - "null"
+                  - number
+              min:
+                type:
+                  - "null"
+                  - number
+              tag:
+                type: string
+      required:
+        - id
+
+  subsets:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      properties:
+        charset:
+          type:
+            - "null"
+            - string
+        family:
+          type: object
+          additionalProperties: false
+          properties:
+            replace:
+              type: string
+            suffix:
+              type: string
+        id:
+          type: string
+        out_dir:
+          type:
+            - "null"
+            - string
+        range:
+          type:
+            - "null"
+            - string
