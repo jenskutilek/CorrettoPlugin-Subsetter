@@ -24,8 +24,12 @@ full functionality for 10 days.
 Make sure you have the main Corretto Post-Processing Plugin installed via the Glyphs
 Plugin Manager.
 [See the installation guide](https://corretto.kutilek.de/manual/installation) for
-details. Then download the Corretto Subsetter from this repository and drag it onto the
+details. Then download the Corretto Subsetter [from the latest release page](https://github.com/jenskutilek/CorrettoPlugin-Subsetter/releases) and drag it onto the
 Glyphs app icon in Finder or in your Dock. Restart Glyphs.
+
+To **enable automatic updates** for the Corretto Subsetter, don’t download the release;
+clone the repo and drag the `CorrettoSubsetter.glyphsPlugin` from there onto the Glyphs
+app icon. When prompted, choose to make an alias.
 
 To run the Subsetter, Corretto must know about it. Add an entry to your [global.correttoconfig.yaml](global.correttoconfig.yaml) as shown.
 
